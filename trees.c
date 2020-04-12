@@ -101,9 +101,9 @@ void Preorder(struct node *t)
     {
     printf(" %d",t->data);
 
-    Inorder(t->left);
+    Preorder(t->left);
 
-    Inorder(t->right);
+    Preorder(t->right);
 
     }
 
@@ -117,9 +117,9 @@ void Postorder(struct node *t)
 
     {
 
-    Inorder(t->left);
+    Postorder(t->left);
 
-    Inorder(t->right);
+    Postorder(t->right);
 
     printf(" %d",t->data);
 
